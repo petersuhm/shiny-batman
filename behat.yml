@@ -1,0 +1,4 @@
+default:
+  suites:
+    time_registration:
+      contexts: [ TimeRegistrationContext ]

@@ -5,9 +5,8 @@ Feature: Developer registers time
 
   Scenario: Successfully registering time for one client
     Given a client named "Crazy Agency"
-    When I track 4 hours today for the client
-    And I track 8 hours yesterday for the client
-    Then my timesheet for the client should contain 12 hours:
-      | 8 hours | for yesteday |
+    When I track '4 hours' today for the client
+    And I track '8 hours' yesterday for the client
+    Then my time sheet for the client should contain '12 hours':
+      | 8 hours | for yesterday |
       | 4 hours | for today    |
-
