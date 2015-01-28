@@ -4,6 +4,7 @@ use Behat\Behat\Tester\Exception\PendingException;
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\Gherkin\Node\TableNode;
+use Tracker\Client\Client;
 
 class TimeRegistrationContext implements Context, SnippetAcceptingContext
 {
@@ -13,7 +14,7 @@ class TimeRegistrationContext implements Context, SnippetAcceptingContext
      */
     public function aClientNamed($name)
     {
-        throw new PendingException();
+        Client::named($name);
     }
 
     /**
