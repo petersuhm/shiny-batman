@@ -10,7 +10,6 @@ class ClientSpec extends ObjectBehavior
     function let()
     {
         $this->beConstructedThrough('named', ['Client Name']);
-
     }
 
     function it_is_initializable()
