@@ -17,7 +17,7 @@ class TimeRegistrationContext implements Context, SnippetAcceptingContext
     }
 
     /**
-     * @When I track :time :when for the client
+     * @When I track|tracked :time :when for the client
      */
     public function iTrackTimeForTheClient($time, $when)
     {
